@@ -1,0 +1,19 @@
+<div class="container">
+    <h1>Courses</h1>
+    <table class=" table table-bordered">
+        <thead class="text-center">
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Credits</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of courses">
+                <td class="text-center">{{item.CourseID}}</td>
+                <td>{{item.Title}}</td>
+                <td class="text-center">{{item.Credits}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
