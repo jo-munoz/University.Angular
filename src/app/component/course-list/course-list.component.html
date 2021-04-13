@@ -6,6 +6,7 @@
                 <th>Id</th>
                 <th>Title</th>
                 <th>Credits</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -13,6 +14,9 @@
                 <td class="text-center">{{item.CourseID}}</td>
                 <td>{{item.Title}}</td>
                 <td class="text-center">{{item.Credits}}</td>
+                <th>
+                    <a class="btn btn-sm btn-outline bg-warning" [routerLink]="[ '/course-edit', item.CourseID ]">Edit</a>
+                </th>
             </tr>
         </tbody>
     </table>

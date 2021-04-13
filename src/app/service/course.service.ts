@@ -13,14 +13,22 @@ export class CourseService {
 
   constructor(public httpClient: HttpClient) { 
     // this.url = './assets/MOCK_DATA.json';
-    this.url = 'http://localhost/University.API/api/Courses';
+    this.url = 'http://localhost/University.API/api/Courses/';
   }
 
   public getAll(): Observable<any>{
     return this.httpClient.get(this.url);
   }
 
+  public getById(id: number): Observable<any>{
+    return this.httpClient.get(this.url + id);
+  }
+
   public save(course: Course): Observable<any>{
     return this.httpClient.post(this.url, course);
+  }
+
+  public edit(course: Course): Observable<any>{
+    return this.httpClient.put(this.url + course.CourseID, course);
   }
 }
