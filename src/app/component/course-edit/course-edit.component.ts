@@ -35,8 +35,9 @@ export class CourseEditComponent implements OnInit {
   }
 
   public edit(){
-    this.courseService.edit(this.course).subscribe(
-      (data) => {
+    console.log(this.course);
+
+    this.courseService.edit(this.course).subscribe((data) => {
         this.router.navigate(['/course-list']);
       },
       (error) => {

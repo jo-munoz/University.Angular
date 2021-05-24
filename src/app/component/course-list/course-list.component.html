@@ -1,5 +1,8 @@
 <div class="container">
     <h1>Courses</h1>
+    
+    <a class="btn btn-sm btn-outline-success mb-3" [routerLink]="[ '/course-save' ]">Create</a>    
+
     <table class=" table table-bordered">
         <thead class="text-center">
             <tr>
@@ -14,9 +17,9 @@
                 <td class="text-center">{{item.CourseID}}</td>
                 <td>{{item.Title}}</td>
                 <td class="text-center">{{item.Credits}}</td>
-                <th>
+                <td>
                     <a class="btn btn-sm btn-outline bg-warning" [routerLink]="[ '/course-edit', item.CourseID ]">Edit</a>
-                </th>
+                </td>
             </tr>
         </tbody>
     </table>
