@@ -32,7 +32,7 @@ export class CourseService {
     return this.httpClient.put(this.url + course.CourseID, course);
   }
 
-  public delete(id: number): Observable<any> {
+  public delete(id: number) {
     return this.httpClient.delete(this.url + id);
   }  
 }

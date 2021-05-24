@@ -18,7 +18,10 @@
                 <td>{{item.Title}}</td>
                 <td class="text-center">{{item.Credits}}</td>
                 <td>
-                    <a class="btn btn-sm btn-outline bg-warning" [routerLink]="[ '/course-edit', item.CourseID ]">Edit</a>
+                    <div class="btn-group " role="group">
+                        <a class="btn btn-sm btn-outline-warning" [routerLink]="[ '/course-edit', item.CourseID ]">Edit</a>
+                        <a class="btn btn-sm btn-outline-danger" [routerLink]="[ '/course-delete', item.CourseID ]">Delete</a>
+                    </div>
                 </td>
             </tr>
         </tbody>

@@ -11,13 +11,15 @@ import { CourseService } from './service/course.service';
 import { CourseListComponent } from './component/course-list/course-list.component';
 import { CourseSaveComponent } from './component/course-save/course-save.component';
 import { CourseEditComponent } from './component/course-edit/course-edit.component';
+import { CourseDeleteComponent } from './component/course-delete/course-delete.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CourseListComponent,
     CourseSaveComponent,
-    CourseEditComponent
+    CourseEditComponent,
+    CourseDeleteComponent
   ],
   imports: [
     BrowserModule,
